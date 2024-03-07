@@ -1,0 +1,7 @@
+#Ignore node modules folder
+node_modules
+
+# Ignore files related to API keys
+.env
+
+test.txt
