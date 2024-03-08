@@ -1,23 +1,16 @@
 import React from 'react'
+import { Routes , Route } from 'react-router-dom';
+import Signup from './Components/SignUp';
+import SignIn from './Components/SignIn';
+import Home from './Components/Home';
 
 const App = () => {
   return (
-    <div>
-      <header>
-        <div className="flex flex-row gap-4 float-end mr-4">
-          <div>
-            <button className="bg-gray-900 text-white text-xl rounded-lg pr-4 pl-4 p-2">
-              Sign Up
-            </button>
-          </div>
-          <div>
-            <button className="bg-gray-900 text-white text-xl rounded-lg pr-4 pl-4 p-2">
-              Sign In
-            </button>
-          </div>
-        </div>
-      </header>
-    </div>
+    <Routes>
+      <Route path="/" element={<Home />} />
+      <Route path="/signup" element={<Signup />} />
+      <Route path="/signin" element={<SignIn />} />
+    </Routes>
   );
 }
 
