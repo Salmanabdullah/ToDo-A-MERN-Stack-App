@@ -6,14 +6,14 @@ const Home = () => {
     <div className="bg-[#54616B] min-h-screen">
       <div className="flex flex-row gap-4 mr-4 justify-end">
         <div>
-          <Link to={"/signup"}>
+          <Link to={"/users/signup"}>
             <button className="bg-gray-900 text-white text-xl rounded-lg pr-4 pl-4 p-2">
               Sign Up
             </button>
           </Link>
         </div>
         <div>
-          <Link to={"/signin"}>
+          <Link to={"/users/signin"}>
             <button className="bg-gray-900 text-white text-xl rounded-lg pr-4 pl-4 p-2">
               Sign In
             </button>

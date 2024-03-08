@@ -1,7 +1,7 @@
 import axios from "axios";
 //import { useSnackbar } from "notistack";
 import React, { useState } from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { useNavigate } from "react-router-dom";
 import Spinner from "./Spinner";
 
 const SignUp = () => {
@@ -20,7 +20,7 @@ const SignUp = () => {
     };
     setLoading(true);
     axios
-      .post('/', data)
+      .post("http://localhost:5000/users", data)
       .then(() => {
         setLoading(false);
         navigate("/");
