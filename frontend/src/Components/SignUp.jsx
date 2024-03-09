@@ -43,7 +43,7 @@ const SignUp = () => {
         <form
           noValidate=""
           action=""
-          className="space-y-12 ng-untouched ng-pristine ng-valid"
+          className="space-y-12"
         >
           <div className="space-y-4">
             <div>
