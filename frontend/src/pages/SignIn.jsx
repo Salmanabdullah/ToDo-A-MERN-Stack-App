@@ -12,9 +12,9 @@ const SignIn = () => {
       email,
       password,
     };
-    axios.post("http://localhost:5000/users", data).then((res) => {
-      console.log(res.data);
-    });
+    axios.post("http://localhost:5000/users", data).then(() => {
+      navigate('/')
+    }).catch(err => console.log(err))
   };
 
   return (
@@ -58,7 +58,7 @@ const SignIn = () => {
             <div>
               <button
                 type="submit"
-                //onClick={handleSignUp}
+                onClick={handleSignIn}
                 className="w-full px-8 py-3 font-semibold rounded-md hover:bg-gray-700 hover:text-white text-gray-100 bg-red-300"
               >
                 Sign In
