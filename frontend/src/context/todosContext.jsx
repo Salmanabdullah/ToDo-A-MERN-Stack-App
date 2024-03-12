@@ -1,3 +1,4 @@
+import PropTypes from "prop-types";
 import { createContext, useReducer } from "react";
 
 export const TodosContext = createContext();
@@ -29,4 +30,9 @@ export const TodosContextProvider = ({ children }) => {
       {children}
     </TodosContext.Provider>
   );
+};
+
+//PropType
+TodosContextProvider.propTypes = {
+  children: PropTypes.array.isRequired,
 };
