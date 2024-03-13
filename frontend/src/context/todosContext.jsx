@@ -34,5 +34,5 @@ export const TodosContextProvider = ({ children }) => {
 
 //PropType
 TodosContextProvider.propTypes = {
-  children: PropTypes.array.isRequired,
+  children: PropTypes.object.isRequired,
 };
