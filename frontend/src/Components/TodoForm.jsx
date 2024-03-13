@@ -42,7 +42,7 @@ const TodoForm = () => {
           onChange={(e) => setTitle(e.target.value)}
           value={title}
         />
-        <button>Add Workout</button>
+        <button>Add</button>
         {error && <div className="error">{error}</div>}
       </form>
     </div>
