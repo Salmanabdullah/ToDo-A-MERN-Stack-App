@@ -2,7 +2,7 @@ import axios from "axios";
 //import { useSnackbar } from "notistack";
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import Spinner from "./Spinner";
+import Spinner from "../Components/Spinner";
 
 const SignUp = () => {
   const [name, setName] = useState("");

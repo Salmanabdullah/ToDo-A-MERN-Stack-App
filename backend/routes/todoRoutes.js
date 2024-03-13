@@ -1,10 +1,10 @@
 import express from "express";
 import getTodos from "../controllers/getTodos.js";
-import createAtodo from "./controllers/createAtodo.js";
+import createAtodo from "../controllers/createAtodo.js";
 
 // import all controllers
 
-const router = express.router();
+const router = express.Router();
 
 // Get all todos
 router.get("/", getTodos);
