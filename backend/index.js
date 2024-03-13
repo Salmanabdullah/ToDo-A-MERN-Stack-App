@@ -3,6 +3,7 @@ import dotenv from "dotenv";
 import express from "express";
 import mongoose from "mongoose";
 import signUpRoute from "./routes/signUpRoute.js";
+import todoRoutes from "./routes/todoRoutes.js";
 
 dotenv.config();
 
@@ -14,7 +15,7 @@ app.use(express.json());
 app.use(cors());
 
 //routes
-// app.use("/home", booksRoute);
+app.use("/home", todoRoutes);
 app.use("/users", signUpRoute);
 // app.use("/users", signInRoute);
 
