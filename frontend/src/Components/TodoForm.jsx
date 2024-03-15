@@ -43,7 +43,7 @@ const TodoForm = () => {
           value={title}
         />
         <button>Add</button>
-        {error && <div className="error">{error}</div>}
+        {error && <div className="">{error}</div>}
       </form>
     </div>
   );

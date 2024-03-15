@@ -6,9 +6,11 @@ import { TodosContextProvider } from "./context/todosContext";
 import "./index.css";
 
 ReactDOM.createRoot(document.getElementById("root")).render(
-  <TodosContextProvider>
-    <BrowserRouter>
-      <App />
-    </BrowserRouter>
-  </TodosContextProvider>
+  <React.StrictMode>
+    <TodosContextProvider>
+      <BrowserRouter>
+        <App />
+      </BrowserRouter>
+    </TodosContextProvider>
+  </React.StrictMode>
 );
