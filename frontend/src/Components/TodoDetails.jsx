@@ -1,4 +1,4 @@
-import React from "react";
+import PropTypes from "prop-types";
 import { useTodoContext } from "../hooks/useTodoContext";
 
 const TodoDetails = ({ todo }) => {
@@ -12,7 +12,19 @@ const TodoDetails = ({ todo }) => {
       dispatch({ type: "DELETE_TODO", payload: data });
     }
   };
-  return <div>TodoDetails</div>;
+  return (
+    <div>
+      <h4>{todo.title}</h4>
+      <span className="" onClick={handleClick}>
+        delete
+      </span>
+    </div>
+  );
+};
+
+//PropType
+TodoDetails.propTypes = {
+  todo: PropTypes.object.isRequired,
 };
 
 export default TodoDetails;

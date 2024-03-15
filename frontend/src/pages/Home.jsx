@@ -8,7 +8,7 @@ const Home = () => {
 
   useEffect(() => {
     const fetchTodos = async () => {
-      const response = await fetch("/home");
+      const response = await fetch("/api/todos");
       const data = await response.json();
 
       if (response.ok) {
@@ -19,7 +19,7 @@ const Home = () => {
   }, [dispatch]);
   return (
     <div className="bg-[#54616B] min-h-screen">
-      <div className="text-center bg-red-400">
+      <div className="text-center ">
         <h1 className="mb-4 text-white text-3xl font-bold pt-8">Todo List</h1>
         <form className="">
           <input
