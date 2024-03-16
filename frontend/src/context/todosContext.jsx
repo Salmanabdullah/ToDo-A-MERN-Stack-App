@@ -3,6 +3,7 @@ import { createContext, useReducer } from "react";
 
 export const TodosContext = createContext();
 
+// TODO: make a separate file for reducer
 export const todosReducer = (state, action) => {
   switch (action.type) {
     case "SET_TODOS":
